@@ -2,12 +2,13 @@
 
 import styled from "styled-components";
 
-export const Arrow = styled.div<{ x: number, y: number, direction: 'left' | 'right' | 'top' }>`
+export const Arrow = styled.div<{ x: number, y: number, direction: 'left' | 'right' | 'top' | 'bottom' }>`
 position: absolute;
 transform: translate(-50%, -50%) rotate(${x => ({
     'left': '0deg',
     'right': '180deg',
-    'top': '90deg'
+    'top': '90deg',
+    'bottom': '270deg',
   })[x.direction]});
 top: ${x => x.y * 100}%;
 left: ${x => x.x * 100}%;
