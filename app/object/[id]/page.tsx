@@ -85,6 +85,11 @@ const objects: Record<string, Object> = {
     right: '4',
     bottom: '8',
   },
+  '14': {
+    back: '/1.png',
+    ratio: 900 / 599,
+    top: '1',
+  },
 }
 
 export default async function Object({ params }: { params: Promise<{ id: string }> }) {
