@@ -43,7 +43,7 @@ opacity: 0.5;
 }
 `
 
-export const Screen = (props: { back: string, ratio: number, children: ReactNode }) => <Container>
+export const Screen = (props: { back: string, ratio: number, children?: ReactNode }) => <Container>
   <Map back={props.back} ratio={props.ratio}>
     {props.children}
   </Map>
